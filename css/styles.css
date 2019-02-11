@@ -1,0 +1,208 @@
+body {
+  background-color: #ffffff;
+  color: #393e46;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.8;
+  margin: 0;
+}
+
+hr {
+  width: 50px;
+  border-width: 5px;
+  border-color: #ffe79a;
+  border-style: dotted none none;
+  margin: 40px 40px 40px 55px;
+}
+
+.education {
+  margin: auto 5%;
+}
+
+.work {
+  margin: auto 5%;
+}
+
+.skills {
+  margin: auto 5%;
+}
+
+.interests {
+  margin: auto 5% 40px;
+}
+
+.contacts {
+  margin: auto 5% 40px;
+}
+
+img {
+  margin: 20px;
+  width: 450px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  height: 250px;
+  object-fit: cover;
+  width: 250px;
+}
+
+h1 {
+  color: #393e46;
+  font-weight: 800;
+}
+
+h2 {
+  color: #acdeaa;
+  margin-left: 55px;
+}
+
+a {
+  color: #ff5959;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8b500;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #264e70;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #ff5959;
+  width: 200px;
+  padding: 8px 20px;
+  margin: 24px 10px;
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-bottom: 2px solid #f8b500;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  width: 150px;
+  padding: 12px 20px;
+  margin: 24px 0;
+  background-color: #ff5959;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type=button]:hover, input[type=submit]:hover {
+  background-color: #f8b500;
+}
+
+ol {
+  counter-reset: li;
+  margin-left: 0;
+  /* Remove the default left margin */
+  padding-left: 0;
+  /* Remove the default left padding */
+}
+
+ol li {
+  position: relative;
+  /* Create a positioning context */
+  margin: 0 0 24px 0em;
+  /* Give each list item a left margin to make room for the numbers */
+  list-style: none;
+  /* Disable the normal item numbering */
+}
+
+ol li::before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  /* Position and style the number */
+  position: relative;
+  /* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+  color: #fff;
+  background: #ff5959;
+  border-radius: 50%;
+  padding: 10px 15px;
+  margin-right: 15px;
+  font-weight: 800;
+}
+
+.decor {
+  margin: 0;
+  width: 100px;
+  background-color: red;
+}
+
+.top-left {
+  background-color: #ffe79a;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.bottom-container {
+  background-color: #fed9ca;
+  text-align: center;
+  padding: 75px 0 30px;
+}
+
+.bottom-left {
+  background-color: #ff5959;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  background-color: #ffe79a;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.top-right {
+  background-color: #ff5959;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.sm {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.sm:hover {
+  opacity: 0.6;
+}
+
+.footer {
+  font-size: 0.9rem;
+}
+
+#about-text {
+  display: inline-block;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+}
